@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Bouncing Ball</title>
+		<meta name="ninja" content="Brian Gabriel">
+		<meta name="viewport" content="width=device-width"/>
+		<link href="main.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<header> 
+			<div class="logo"></div>
+		</header>
+
+		<canvas id="app"></canvas>
+
+		<footer>
+			<form onsubmit="return false;" oninput="out.value=adjust.value+'px'">
+				<h2>Ball Controls</h2>
+				New: 
+				<input type="range" name="range" id="adjust" min="25" max="75"></input>
+				<output type="range" id="out" for="adjust">50px</output>
+				</br>
+				<button id="add" class="orange">Add</button>
+				<button id="remove" class="red">Remove</button>
+				<button id="clear" class="red">Clear</button>
+			</form>
+		</footer>
+
+	</body>
+		<script type="text/javascript" src="main.js"></script>
+</html>
